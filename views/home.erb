@@ -1,16 +1,20 @@
-<!-- views/add.erb -->
+<!-- views/calculate.erb -->
+
 <!doctype html>
 <html>
 <head>
-  <title>Add | Online Calculator</title>
+  <title>Online Calculator</title>
   <link rel="stylesheet" type="text/css" href="/css/style.css" />
 </head>
 <body>
-  <h3>Add:</h3>
+  <h3>The incredible calculator:</h3>
   <form action="/calculate" method="POST">
     <input type="number" name="first_number" placeholder=" number"/> &amp;
     <input type="number" name="second_number" placeholder=" number"/></br>
     <button type="submit" name="operation" value="+"/>+</button>
+    <button type="submit" name="operation" value="-"/>-</button>
+    <button type="submit" name="operation" value="*"/>*</button>
+    <button type="submit" name="operation" value="/"/>/</button>
   </form>
 </body>
 </html>
